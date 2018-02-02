@@ -7,10 +7,22 @@
 		2.可以引用环境变量: ${env.JAVA_HOME} or System.properties: ${user.home},property之间也可以相互引用
 	</comment>
 	
+	<!-- 自定义变量 start-->
+	
+	<entry key="project-api">regulus-account-api</entry>
+    <entry key="project-provider">regulus-account-provider</entry>
+    <entry key="project-consumer">regulus-account-consumer</entry>
+    
+    <entry key="commonBasePackage">org.regulus.common</entry>
+    <entry key="apiBasePackage">org.regulus.account.api</entry>
+    <entry key="providerBasePackage">org.regulus.account.provider</entry>
+    <entry key="consumerBasePackage">org.regulus.account.consumer</entry>
+    <!-- 自定义变量  end-->
+	
 	<entry key="basepackage">com.cncounter</entry>
 
 	<!-- 子包,只支持单个词 -->
-	<entry key="subpackage">manage</entry>
+	<entry key="subpackage">usercenter</entry>
 	
 	<!-- jsp namespace: web/${namespace}/${className}/list.jsp -->
 	<entry key="namespace">pages</entry>
@@ -19,7 +31,7 @@
 	<entry key="outRoot">generated-sources</entry>
 
 	<!-- 需要移除的表名前缀,使用逗号进行分隔多个前缀,示例值: t_,v_ -->
-	<entry key="tableRemovePrefixes">T_AR,T_BD,T_CD,T_PD,T_CL,T_IP,T_LO,T_RI,T_EV</entry>
+	<entry key="tableRemovePrefixes">T_AR,T_BD,T_CD,T_PD,T_CL,T_IP,T_LO,T_RI,T_EV,t_</entry>
 
 	<!-- 需要移除的列名前缀,逗号分隔,示例: S_,I_ -->
 	<entry key="rowRemovePrefixes">S_,B_,I_,DT_,TS_,M_,F_,PK_I_N,PK_I_S</entry>
@@ -43,10 +55,10 @@
 
 		
 	<!-- Mysql连接,useInformationSchema 取出表名注释 -->
-	<entry key="jdbc.url">jdbc:mysql://localhost:3306/cncounter?useUnicode=true&amp;characterEncoding=utf8&amp;useInformationSchema=true</entry>
+	<entry key="jdbc.url">jdbc:mysql://localhost:3306/regulus?useUnicode=true&amp;characterEncoding=utf8&amp;useInformationSchema=true</entry>
 	<entry key="jdbc.driver">com.mysql.jdbc.Driver</entry>
 	<entry key="jdbc.username">root</entry>
-	<entry key="jdbc.password">root</entry>
+	<entry key="jdbc.password">123456</entry>
 	
 	
 
